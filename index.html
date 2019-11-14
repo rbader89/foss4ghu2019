@@ -26,12 +26,12 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<p>Bukarest 2019</p>
-					<p>Élménybeszámoló</p>
+					<h1>Bukarest 2019</h1>
+					<h2> FOSS4G Élménybeszámoló</h2>
 				</section>
 				<section>
 					<div>
-						<p>Tartalom</p>
+						<h1>Tartalom</h1>
 						<ul>
 							<li>Élménybeszámoló</li>
 							<li>Geostyler</li>
@@ -40,14 +40,62 @@
 					</div>
 				</section>
 				<section>
-					<section>Helyszín</section>
-					<section>Map</section>
+					<section>
+						<h1>Helyszín</h1>
+					</section>
+					<section>
+						<a href="https://www.openstreetmap.org/?mlat=44.402&amp;mlon=26.104#map=5/44.402/26.104">
+							<h3>Bukarest, Románia</h3>
+						</a>
+						<iframe width="900" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.5820312500000002%2C34.19817309627726%2C50.62500000000001%2C53.09402405506328&amp;layer=mapnik&amp;marker=44.402391829093915%2C26.103515625" style="border: 1px solid black"></iframe>
+						<br/>
+					</section>
+					<section>
+						<a href="https://www.openstreetmap.org/?mlat=44.43665&amp;mlon=26.10282#map=17/44.43665/26.10282">
+							<h3>Nemzeti Színház - Hotel Intercontinental</h3>
+						</a>
+						<iframe width="900" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=26.09683156013489%2C44.43434675978041%2C26.10880494117737%2C44.43895847508567&amp;layer=mapnik&amp;marker=44.436652662928864%2C26.102818250656128" style="border: 1px solid black"></iframe>
+					</section>
+					<section>
+						(Számomra mindenképp) Hiánypótló megoldások
+					</section>
 				</section>
 				<section>
-					<section>Geostyler</section>
+					<section>
+						<h1>Geostyler</h1>
+					</section>
+					<section>
+						<p>Mi az a Geostyler?</p>
+						<p class="fragment fade-up">"The GeoStyler is a generic styler for geodata"</p>
+					</section>
+					<section>
+						<img src="https://imgs.xkcd.com/comics/standards.png" alt="XKCD Standards" width="800px">
+						<br/>
+						<small>
+							<a href="https://xkcd.com/927/">Forrás</a>
+						</small>
+					</section>
+					<section>
+						<h3>Open source világban használt stílusok</h3>
+						<ul>
+							<li class="fragment fade-up">SLD</li>
+							<li class="fragment fade-up">QML</li>
+							<li class="fragment fade-up">MapBox</li>
+							<li class="fragment fade-up">OpenLayers</li>
+							<li class="fragment fade-up">stb...</li>
+						</ul>
+						<p class="fragment fade-up">GeoSytler Style</p>
+					</section>
+					<section>
+						<h3>Működési elv</h3>
+						<p>A támogatott formátumokból fordítás GeoStyler stílusra...</p>
+						<p class="fragment fade-up">... és fordítva</p>
+					</section>
 				</section>
 				<section>
-					<section>GeoHealthCheck</section>
+					<section>
+						<h1>GeoHelathCheck</h1>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -64,7 +112,9 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				],
+				history: true,
+				fragmentInURL: true
 			});
 		</script>
 	</body>
